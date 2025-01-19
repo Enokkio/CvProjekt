@@ -11,6 +11,7 @@ export default function Home() {
       display: "flex",
       justifyContent: "center",
       height: "100vh",
+      width: "90%",
       margin: "auto",  // Centers the container
 
     },
@@ -18,13 +19,12 @@ export default function Home() {
       width: "33%",
       backgroundColor: "#98D8EF",
       padding: "16px",
-      boxSizing: "border-box", // Include padding in width calculation
-      padding: "16px",       // Optional padding inside the inner div
+      boxSizing: "border-box",
       borderRadius: "8px",
-      boxShadow: "0 2px 10px rgba(0, 0, 0, 0.1)",
-      marginLeft:"20px",
+      marginLeft: "20px",
       marginTop: "14px",
-      marginBottom: "10px"
+      marginBottom: "10px",
+  
     },
     rightSection: {
       width: "67%",
@@ -33,7 +33,7 @@ export default function Home() {
       boxSizing: "border-box",
     },
     innerBox: {
-      width: "90%",          // Slightly smaller than the container (80% of the width)       // Slightly smaller height (80% of the height)
+      width: "100%",          // Slightly smaller than the container (80% of the width)       // Slightly smaller height (80% of the height)
       backgroundColor: "#ffffff", // White background for the inner div
       boxSizing: "border-box", // Ensure padding is included in size calculation
       padding: "16px",       // Optional padding inside the inner div
@@ -46,7 +46,7 @@ export default function Home() {
 
   return (
     <div>
-    <button onClick={() => toPDF()}>Download PDF</button>
+    {/* <button onClick={() => toPDF()}>Download PDF</button> */}
 
       <div style={styles.container}  ref={targetRef}>
         {/* Left Section: 33% Width */}
@@ -62,13 +62,13 @@ export default function Home() {
             <Text
             summary="Profile Summary"
             paragraph="Som civilingenjörsstudent vid Lunds Tekniska Högskola och med en
-yrkesexamen som gymnasieingenjör har jag en solid bakgrund inom
-mjukvaruutveckling. Jag har arbetat med applikationer och
-webblösningar, vilket har stärkt min förmåga att snabbt lära mig nya
-teknologier och utvecklat mina samarbets- och
-problemlösningsfärdigheter. Med en kombination av teknisk kompetens
-och ett strukturerat arbetssätt är jag väl rustad att bidra inom olika
-yrkesområden.
+              yrkesexamen som gymnasieingenjör har jag en solid bakgrund inom
+              mjukvaruutveckling. Jag har arbetat med applikationer och
+              webblösningar, vilket har stärkt min förmåga att snabbt lära mig nya
+              teknologier och utvecklat mina samarbets- och
+              problemlösningsfärdigheter. Med en kombination av teknisk kompetens
+              och ett strukturerat arbetssätt är jag väl rustad att bidra inom olika
+              yrkesområden.
 "
             fontSize="18px" // Optional, defaults to 16px if not provided
             />
